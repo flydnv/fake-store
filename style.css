@@ -25,3 +25,34 @@ body {
   height: 235px;
   object-fit: contain;
 }
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font: 30px bold;
+}
+#pagination li {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+#pagination li:hover {
+  background-color: grey;
+  color: white;
+  transition: 0.3s;
+}
+
+#recordPerPage {
+  font-size: 40px;
+  display: block;
+  margin: 10px auto;
+}
+.active {
+  background-color: red;
+  color: white;
+}
+#next,#prev{
+  user-select: none;
+}
